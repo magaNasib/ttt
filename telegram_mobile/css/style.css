@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.active-telegram {
+    background-color: #2675EC;
+    color: #fff;
+    border-radius: 20px !important;
+}
+
+.active-telegram:hover {
+    color: white;
+}
+
+.gallery {
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.gallery .item {
+    width: 33%;
+    height: 90px;
+    padding: 5px;
+}
+
+.item img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.font-size-9 {
+    font-size: .9rem;
+}
+
+.text-dark {
+    font-size: .9rem;
+    color: #131313;
+}
+
+.hover-none:hover {
+    text-decoration: none;
+}
+
+.after {
+    padding: 5px;
+    background-color: #2675EC;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.border_bottom {
+    transition: .6s;
+}
+
+.border_bottom:hover {
+    border-right: 1px solid rgb(189, 188, 188);
+    border-left: 1px solid rgb(189, 188, 188);
+}
+
+.opened-menu {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(255, 254, 254);
+    z-index: 2;
+    right: -80%;
+    transition-duration: 1s;
+    top: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.font-size-8 {
+    font-size: .8rem;
+}
+
+.messages {
+    height: 65vh;
+    overflow-x: hidden !important;
+    overflow: hidden;
+    scroll-padding-bottom: 20px;
+}
+
+.message-border-radius-right {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.message-border-radius-left {
+    background-color: #2675EC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.message-border-radius-left:first-child {
+    border-top-left-radius: 20px;
+}
+
+.message-border-radius-left:last-child {
+    border-bottom-left-radius: 20px;
+}
+
+.odd-border-left {
+    border-bottom-left-radius: 7px !important;
+}
+
+.position-absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
+
+.message-input {
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+}
+
+.message-input::placeholder {
+    font-size: .9rem;
+}
+
+.absolute-icons {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.absolute-icons.first {
+    right: 25%;
+}
+
+.absolute-icons.second {
+    right: 15%;
+}
+
+.absolute-icons.third {
+    right: 5%;
+}
+
+.opened-bar {
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    background-color: #2675EC;
+    border-radius: 20px;
+    border-top-right-radius: 10px;
+    color: white;
+    z-index: -100;
+}
+
+.opened-bar a {
+    color: inherit;
+}
+
+.opened-bar a:hover {
+    text-decoration: none;
+}
+
+#myInput {
+    padding-right: 7rem !important;
+}
+
+.icon-bar {
+    bottom: -100px;
+    transition: .5s;
+}
+
+.icon-bar ul {
+    justify-content: space-evenly;
+}
+
+.icon-bar ul li {
+    text-align: center;
+}
+
+.images-bar {
+    height: 45vh;
+    bottom: -300px;
+    transition: .6s;
+}
+
+.images-bar .d-flex {
+    justify-content: space-between;
+}
+
+.scroll {
+    height: 100%;
+}
+
+.bg-different {
+    opacity: .5;
+}
+
+.iamgeSend,
+#icon {
+    cursor: pointer;
+}
+
+.telegram-header {
+    background-color: #2675EC;
+    border-radius: 20px;
+}
+
+@media screen and (min-width:768px) {
+    * {}
+}
